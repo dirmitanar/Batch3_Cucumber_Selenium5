@@ -1,9 +1,12 @@
 package com.krafttech.pages;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class EditProfilePage extends BasePage{
+public class EditProfilePage extends BasePage {
+
+    //driver.findelement(...)
     @FindBy(css = "#about")
     public WebElement aboutInputBox;
 
@@ -30,5 +33,3 @@ public class EditProfilePage extends BasePage{
         select.selectByVisibleText(jobDescription);
     }
 }
-
-

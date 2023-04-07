@@ -3,14 +3,14 @@ Feature: Navigation Menu
 
   Background:
     Given The user is on the login page
-  @rerun
+#  @rerun
   Scenario: Navigation to Developers menu
     When The user enters valid credentials that belongs to Mike
     Then The user should be able to see Dashboard text
     And The user navigates to Developer menu
     Then The user able to see Developers text
 
-  @second
+  @second@vip
   Scenario: Navigation to Forms Input menu
     When The user enters valid credentials that belongs to Mike
     Then The user should be able to see Dashboard text

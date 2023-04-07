@@ -1,6 +1,8 @@
 package com.krafttech.utilities;
+
 import java.io.FileInputStream;
 import java.util.Properties;
+
 public class ConfigurationReader {
 
     private static Properties properties;
@@ -28,5 +30,3 @@ public class ConfigurationReader {
     }
 
 }
-
-

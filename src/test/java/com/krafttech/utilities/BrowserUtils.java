@@ -1,4 +1,5 @@
 package com.krafttech.utilities;
+
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -14,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
 public class BrowserUtils {
     /*
      * takes screenshot
@@ -405,5 +407,3 @@ public class BrowserUtils {
     }
 
 }
-
-

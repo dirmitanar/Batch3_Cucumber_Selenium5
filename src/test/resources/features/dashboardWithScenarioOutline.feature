@@ -3,10 +3,8 @@ Feature: Dashboard
   Scenario Outline: Title checks (<tab> and <module>)
     Given The user is on the login page
     When The user logs in using "john@gmail.com" and "John1234."
-    # Then The user name should be "John"
     And Go to "<tab>" and "<module>"
     Then Verify that "<title1>" and "<title2>" and "<title3>"
-
 
     Examples:
       | tab        | module       | title1 | title2     | title3    |

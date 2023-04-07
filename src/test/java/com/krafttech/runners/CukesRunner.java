@@ -1,6 +1,5 @@
 package com.krafttech.runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -8,15 +7,13 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"json:target/cucumber.json",
-             "html:target/default-html-reports.html",   // raporu cucucmberden almak için
-            "rerun:target/rerun.txt"
+                "html:target/default-html-reports",
+                "rerun:target/rerun.txt"
         },
         features = "src/test/resources/features",
         glue = "com/krafttech/steps_defs",
         dryRun = false,
-        tags = "@example"
+        tags = "@rerun"
 )
 public class CukesRunner {
-
-
 }

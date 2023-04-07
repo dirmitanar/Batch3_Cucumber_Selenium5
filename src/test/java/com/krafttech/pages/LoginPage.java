@@ -1,4 +1,5 @@
 package com.krafttech.pages;
+
 import com.krafttech.utilities.ConfigurationReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -6,8 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
 import java.util.List;
+
 public class LoginPage extends BasePage {
-    //    public LoginPage(){
+
+//    public LoginPage(){
 //       PageFactory.initElements(Driver.get(),this);
 //    }
 
@@ -30,7 +33,7 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "(//span[.='Alerts']/../../..)[1]/li")
     public List<WebElement> componentsMenuList_loc;
 
-    // if one of the element is true it is pass => OR
+   // if one of the element is true it is pass => OR
     @FindAll({
             @FindBy(css ="#email" ),
             @FindBy(name = "email")
@@ -89,5 +92,3 @@ public class LoginPage extends BasePage {
 
 
 }
-
-

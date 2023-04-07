@@ -1,6 +1,10 @@
 package com.krafttech.steps_defs;
+
 import io.cucumber.java.en.Then;
-public class NavigateMenu_StepDefs {
+import org.junit.Assert;
+
+public class NavigationMenu_StepDefs {
+
     @Then("The user should be able to see Dashboard text")
     public void the_user_should_be_able_to_see_Dashboard_text() {
         System.out.println("I verified that Dashboard text is here");
@@ -14,6 +18,7 @@ public class NavigateMenu_StepDefs {
     @Then("The user able to see Developers text")
     public void the_user_able_to_see_Developers_text() {
         System.out.println("I verify that developers text is here");
+       // Assert.assertTrue(100<99);
     }
     @Then("The user navigates to Forms Input menu")
     public void the_user_navigates_to_Forms_Input_menu() {
@@ -36,6 +41,3 @@ public class NavigateMenu_StepDefs {
     }
 
 }
-
-
-

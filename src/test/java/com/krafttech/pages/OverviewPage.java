@@ -1,10 +1,11 @@
 package com.krafttech.pages;
+
 import com.krafttech.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class OverviewPage  extends BasePage{
+public class OverviewPage extends BasePage{
 
     @FindBy(xpath = "//div[@role='alert']")
     public WebElement helperText;
@@ -16,10 +17,7 @@ public class OverviewPage  extends BasePage{
     }
 
     public void tapOnTab(String str){
-        //driver.findElement(By.xpath("//*[.='Alperen']));
         WebElement tab = Driver.get().findElement(By.xpath("//li/button[.='" + str + "']"));
         tab.click();
     }
-
-
 }
